@@ -1,9 +1,89 @@
-<!-- Desafio 2 digitação (Aqui) -->
- 
-<!-- Obs: Ler (10a_desafio.md) para orientações -->
-<!-- Imagem de como deve ficar pronto na pasta assets (desafio 2.jpg) -->
-
-<!-- 📱 🚀 📺 📧 emojis para usar no projeto -->
-
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8">
+     <title>TechNews Today 📱</title>
+     <style>
+          body {
+               margin: 0;
+               background: url('https://i.pinimg.com/originals/1b/3c/58/1b3c5821c4ef798f196b30cc3eb46ac2.gif') no-repeat center fixed;
+               background-size: cover;
+               color: rgb(255, 255, 255); 
+               position: relative;       
+          }
+          h1{
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+          }
+          body::before {
+               content: "";
+               position: fixed;
+               top: 0;
+               left: 0;
+               width: 100%;
+               height: 100%;
+               background-color: rgba(0, 0, 0, 0.5); 
+               z-index: 0;
+          }
+          body * {
+               position: relative;
+               z-index: 1;
+               text-align: center;
+          }
+          a {
+               color: #dbafff;  
+          }
+     </style>
+</head>
+      <body>
+        <header>
+            <img src="assets/tech news.png" alt="Logo TechNews" width="450">
+            <p><em>As últimas novidades em tecnologia direto para você</em></p>
+            <nav>
+                 <a href="#">Início</a> | 
+                 <a href="#news">Notícias</a> | 
+                  <label for="cidade">Interesses:</label>
+        <select name="cidade" id="cidade">
+           <option value="">Selecione</option>
+           <option value="sp">Inteligencia Artificial</option>
+           <option value="rj">Back-End</option>
+           <option value="mg">Front-End</option>
+        </select>
+            </nav>
+            <br>
+        </header>
+        <main>
+              <form>
+                <input type="text" name="busca" placeholder="Buscar notícias… 🔍">
+                <input type="email" name="email" placeholder="Digite seu e-mail" required>
+                <input type="text" name="nome" placeholder="Seu nome (opcional)">
+                <button type="submit">Inscrever-se</button>
+              </form>
+        </main>
+        <article>
+         <h2>Novo smartphone dobrável revoluciona o mercado</h2>
+         <p>O lançamento do mais recente modelo dobrável promete transformar a experiência dos usuários, 
+          unindo portabilidade e desempenho em um design inovador.</p>
+          <a href="10a_desafio(complemento).html" target="_blank">Acesse a matéria completa</a>
+         <p>Publicado em <time datetime="2025-08-21">21/08/2025</time></p>
+         <br><br>
+         <details>
+            <h2>Inteligência Artificial alcança novo marco</h2>
+            <summary>Pesquisadores anunciam que a IA desenvolvida recentemente atingiu níveis inéditos de aprendizado autônomo, podendo resolver problemas complexos de forma mais eficiente e segura.</summary>
+            <p>Nos últimos anos, o avanço da inteligência artificial (IA) tem sido exponencial. A equipe responsável pelo projeto divulgou que a nova IA consegue analisar grandes volumes de dados em tempo recorde, identificar padrões complexos e propor soluções inovadoras sem intervenção humana direta.</p>
+         </details>
+         <br><br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RaSxjr6F_eI?si=hgZBnn88tAGkQ4ty" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"       referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+        </article>
+        <footer id="contato">
+          <p>© 2025 TechNews Today – Todos os direitos reservados</p>
+          <p>
+             <a href="mailto:contato@technewstoday.com">Contato</a> | 
+             <a href="#">Twitter</a> | 
+             <a href="#">Instagram</a>
+          </p>
+          <p><em>Inovação todos os dias, fique conectado!</em></p>
+</footer>   
+      </body>
 
 
